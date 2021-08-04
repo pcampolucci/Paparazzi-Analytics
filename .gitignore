@@ -7,6 +7,7 @@ logs_tak_optitrack/*
 plots/*
 convert_data_csv/logs_converted/*
 convert_data_csv/logs_raw/*
+convert_data_csv/logs_sd/*
 
 # exception to the rule to keep folder in
 !logs_csv_logger/.gitkeep
@@ -15,3 +16,4 @@ convert_data_csv/logs_raw/*
 !plots/.gitkeep
 !convert_data_csv/logs_converted/.gitkeep
 !convert_data_csv/logs_raw/.gitkeep
+!convert_data_csv/logs_sd/.gitkeep
