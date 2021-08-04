@@ -1,18 +1,17 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+__pycache__/
 
-# Other files and folders
-.settings/
+# folder content ignored
+logs_csv_logger/*
+logs_csv_optitrack/*
+logs_tak_optitrack/*
+plots/*
+convert_data_csv/logs_converted/*
+convert_data_csv/logs_raw/*
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# exception to the rule to keep folder in
+!logs_csv_logger/.gitkeep
+!logs_csv_optitrack/.gitkeep
+!logs_tak_optitrack/.gitkeep
+!plots/.gitkeep
+!convert_data_csv/logs_converted/.gitkeep
+!convert_data_csv/logs_raw/.gitkeep
