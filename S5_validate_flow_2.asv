@@ -27,8 +27,8 @@ f_mag = 1/t_mag;
 t_start_logger = 0;
 
 % set start end for log
-start_log = 0.07;
-end_log = 0.52;
+start_log = 0.01;
+end_log = 0.3;
 
 %%  1 : Process Data from Logger
 
@@ -273,29 +273,12 @@ ylabel("Error VY [m/sec]");
 % Final figure showing the results
 figure_final = figure('Visible', show_final);
 set(figure_final,'defaulttextinterpreter','latex');
-subplot(4,1,1);
-plot(x.log_flow, vx_body_res); hold on;
-plot(x.log_flow, vx_body_flow);
-title("Optical Flow Based Velocity Estimation");
-legend("Optitrack", "Flow Based");
+subplot(3,4,1);
+plot(x.log_flow, log_data.flow_x); hold on;
+plot(x.log_flow, log_data.flow_y)
+legend("flow x", "flow y");
 xlabel("Time [sec]");
-ylabel("$V_x$ [m/sec]");
-subplot(4,1,2);
-plot(x.log_flow, vy_body_res); hold on;
-plot(x.log_flow, vy_body_flow)
-legend("Optitrack", "Flow Based");
-xlabel("Time [sec]");
-ylabel("$V_y$ [m/sec]");
-subplot(4,1,3);
-plot(x.log_flow, log_data.flow_quality);
-xlabel("Time [sec]");
-ylabel("Quality Flow [0-255]");
-subplot(4,1,4);
-plot(x.log_flow, log_data.gyro_x_r); hold on;
-plot(x.log_flow, log_data.gyro_y_r)
-legend("Roll Rate", "Pitch Rate")
-xlabel("Time [sec]");
-ylabel("Rotational Speed [deg/sec]");
+ylabel("Flow [deg/sec]");
 
 
 
