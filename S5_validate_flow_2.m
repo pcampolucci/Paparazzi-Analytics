@@ -298,4 +298,3 @@ xlabel("Time [sec]");
 ylabel("Rotational Speed [deg/sec]");
 
 
-

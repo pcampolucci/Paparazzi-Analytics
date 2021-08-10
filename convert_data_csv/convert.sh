@@ -32,8 +32,7 @@ while true; do
                 export PAPARAZZI_HOME="$HOME/$foldername";
                 cd "$HOME/$foldername/sw/logalizer" || exit;
                 ./sd2log "$sd_dir/fr_$logfile.LOG" "$raw_dir";
-                cd "$DIR"
-                break;;
+                cd "$DIR";;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
@@ -45,8 +44,7 @@ while true; do
     read -p "Do you wish to extract a certain message? --> " yn
     case $yn in
         [Yy]* ) read -p "What message do you want to extract from ? --> " messagename;
-                python3 "$DIR/main.py" "$messagename";
-                break;;
+                python3 "$DIR/main.py" "$messagename";;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
     esac
