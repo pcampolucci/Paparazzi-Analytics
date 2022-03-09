@@ -1,4 +1,5 @@
-# Caravel Log Viewer
+# Paparazzi Log Viewer
+
 #### Compatible with Optitrack Logs and Paparazzi UAS logs
 
 The following folders are excluded, but necessary for the use of the code:
